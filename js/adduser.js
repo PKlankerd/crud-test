@@ -126,9 +126,7 @@ let app = new Vue({
             const time_add = row.Time_Add.toLowerCase();
             const time_edit = row.Time_Edit.toLowerCase();
             const searchTerm = this.filtering.toLowerCase();
-
         return (
-            
             employeeNumber.includes(searchTerm) ||     
             firstName.includes(searchTerm) ||
             lastName.includes(searchTerm) ||

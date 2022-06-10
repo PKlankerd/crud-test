@@ -10,17 +10,12 @@ $data = array();
     {
         $query ="SELECT * FROM users"; 
         $statement = $connect->prepare($query);  
-        
         $statement->execute();  
-       
         while($row = $statement->fetch(PDO::FETCH_ASSOC)){ 
             $data[] = $row;  
         }
         echo json_encode($data);  
     }
-    
-    
-           
 
     if($received_data->actions == "insert") 
     
@@ -52,7 +47,6 @@ $data = array();
 
         foreach($result as $row){      
             $data['id'] = $row['employeeno']; 
-             
             $data['employee_number'] = $row['employeeno']; 
             $data['first_name'] = $row['Firstname'];
             $data['last_name'] = $row['Lastname'];
@@ -61,6 +55,7 @@ $data = array();
         }
         echo json_encode($data);  
     }
+    
     if($received_data->actions == 'update'){   
         $data = array(
             

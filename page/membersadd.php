@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,14 +62,8 @@
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">**constant**</a></li>
                     <li><a href="membersadd.php">Members</a></li>
-
-
-
                 </ul>
-            </li>
-           
-
-           
+            </li>          
         </ul>
     </div>
 
@@ -87,9 +80,7 @@
         <div class="container-fluid  " id="crudApp">
             <div class=" home_content ">
 
-
                 <div class="col-12" align="center">
-
                     <div class="col-md-4">
                         <h1 class="mt-3" Style="border: 1px solid #000; border-radius: 30px; background-color:#DDDDDD;">
                             Create Members  </h1>
@@ -98,7 +89,6 @@
                         <input type="search" class="form-control form-control-md " placeholder="Search Here"
                             v-model="filtering">
                     </div>
-
                     <div class="col-12 mb-3" align="right">
                         <input type="button" class="btn btn-success btn-xs  " data-bs-toggle="modal"
                             data-bs-target="#myModal" @click="openModal" value="Add Members">
@@ -137,7 +127,6 @@
                             </tr>
                         </table>
                     </div>
-
                     <div v-if="myModal" class="modal fade" id="myModal" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -154,55 +143,33 @@
                                             style="border-radius: 30px;" maxlength="15">
                                       
                                     </div>
-
-
                                     <div class="col-md-4">
                                         <label for="First Name"><i class='bx bx-user-pin'></i>First Name:</label><br>
                                         <input type="text" v-model="first_name" class="form-control form-control-sm"
                                             placeholder="First Name.." style="border-radius: 30px;" maxlength="25">
-
-
-                                       
+                                      
                                     </div>
-
                                     <div class="col-md-4">
                                         <label for="Last Name"><i class='bx bx-user-pin'></i>Last Name:</label><br>
                                         <input type="text" v-model="last_name" class="form-control form-control-sm"
-                                            placeholder="Last Name.." style="border-radius: 30px;" maxlength="25">
-
-                                        
+                                            placeholder="Last Name.." style="border-radius: 30px;" maxlength="25">                                       
                                     </div>
-
                                     <div class="col-md-4">
                                         <label for="Age"><i class='bx bx-at'></i>Age:</label><br>
                                         <input type="Age" v-model="age_add" class="form-control form-control-sm"
                                             placeholder="Age.." style="border-radius: 30px;" maxlength="30">
-
-                                       
                                     </div>
                                     <br>
-
-                                    
                                     <div class="col-md-8">
                                         <label for="Address"><i class='bx bx-building-house'></i>Address:</label><br>
                                         <input type="text" v-model="local_address" class="form-control form-control-sm"
-                                            placeholder="Address.." style="border-radius: 30px;" maxlength="80">
-
-
-                                        
-                                    </div>
-                                    
-
-                                  
-
-                      
-
+                                            placeholder="Address.." style="border-radius: 30px;" maxlength="80"> 
+                                    </div>                                 
                                     <div class="modal-footer">
                                         <input type="hidden" v-model="hiddenId">
                                         <input type="button" v-model="actionButton" @click="submitData"
                                             class="btn btn-success btn-xs">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -211,16 +178,10 @@
             </div>
         </div>
     </section>
-
-
-
-
     <script src="../js/dropdown.js"></script>
     <script src="../js/adduser.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
 </body>
-
 </html>

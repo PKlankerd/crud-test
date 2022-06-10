@@ -66,18 +66,12 @@
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">**constant**</a></li>
                     <li><a href="membersadd.php">Members</a></li>
-                
-
                 </ul>
             </li>
- 
-
-          
         </ul>
     </div>
 
     <!-- sidebar -->
-
     <section class="home-section">
         <div class="home-content">
             <i class='bx bx-menu'></i>
@@ -116,11 +110,7 @@
                                     <th>Date_Edit</th>
                                 </tr>
                             </thead>
-
-                            <!-- table -->
-                     
                                 <!-- table -->
-
                             <tbody>
                                 <tr v-for="(row,index) in filteredRows " :key="row.employeeno">
                                     <!-- เป็นการลูปตัวแปร filteredRows  มาใส่ตัวแปร ROW เพื่อมาประกาศ -->
@@ -135,16 +125,12 @@
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
     </section>
-
     <!-- script javascript -->
     <script src="../js/dropdown.js"></script>
     <script src="../js/adduser.js"></script>
