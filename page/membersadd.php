@@ -92,7 +92,7 @@
 
                     <div class="col-md-4">
                         <h1 class="mt-3" Style="border: 1px solid #000; border-radius: 30px; background-color:#DDDDDD;">
-                            Create Users  </h1>
+                            Create Members  </h1>
                     </div>
                     <div class=" form-group mb-3 col-lg-8 mt-4  ">
                         <input type="search" class="form-control form-control-md " placeholder="Search Here"
