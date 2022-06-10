@@ -22,7 +22,7 @@
 <body style="background-color:#ffff; overflow:auto; ">
     <div class="sidebar close">
         <div class="logo-details">
-            <!-- <i class='bx bxs-hand'></i> -->
+            <i class='bx bxs-hand'></i>
             <span class="logo_name">CRUD TEST</span>
         </div>
         <ul class="nav-links">
@@ -67,9 +67,7 @@
     <section class="home-section">
         <div class="home-content">
             <i class='bx bx-menu'></i>
-            <span class="text">
-                <span>Welcome To </span>
-            </span>
+        
         </div>
         <div class="container " id="crudApp">
             <div class=" home_content ">
