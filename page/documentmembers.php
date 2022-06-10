@@ -92,10 +92,7 @@
                 <div class="card " style="background-color: #fff;">
                     <div class="card-body col-md-12 mx-auto">
 
-                    <button onclick="myFunction()" class="btn btn-primary btn-sm" style="float: right;">*วิธีการ
-                            Search*</button>
-
-                        <table id="table" class="table table-striped table-sm" style="width:100%">
+                       <table id="table" class="table table-striped table-sm" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -155,13 +152,6 @@
 
      <!-- javascript table -->
      <script src="../js/table.js"></script>
-
-
-<script>
-    function myFunction() {
-        alert("พิมพ์รหัสพนักงาน หรือ ข้อมูลส่วนไหนก็ได้ ");
-    }
-    </script>
 
 </body>
 
