@@ -1,5 +1,5 @@
 
-    $(document).ready(function() {
+$(document).ready(function() {
         $("#table tfoot th").each(function() {
             var title = $(this).text();
             $(this).html('<input type="text" placeholder=" ' + title +
@@ -8,7 +8,7 @@
 
         var table = $("#table").DataTable({
             //อ้างอิงถึง ดาต้า table methord datatable
-            buttons: [ "excel", "pdf"],
+            buttons: [ "excel", "pdf","colvis"],
 
             initComplete: function() {
                 // Apply the search
@@ -16,7 +16,6 @@
                     .columns()
                     .every(function() {
                         var that = this;
-
                         $("input", this.footer()).on("keyup change clear", function() {
                             if (that.search() !== this.value) {
                                 that.search(this.value).draw();
@@ -25,6 +24,5 @@
                     });
             },
         });
-
         table.buttons().container().appendTo("#table_wrapper .col-md-6:eq(1)");
-    });
+});
